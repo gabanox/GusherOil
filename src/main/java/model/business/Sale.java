@@ -17,8 +17,12 @@ public class Sale {
 		return product;
 	}
 
-	public void setProduct(GenericProduct product) {
+	private void setProduct(GenericProduct product) {
 		this.product = product;
+	}
+	
+	public void addProductForSale(GenericProduct product){
+		this.setProduct(product);
 	}
 	
 }
